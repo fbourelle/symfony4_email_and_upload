@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello !{% endblock %}
+
+{% block main %}
+<div >
+    <h1>Welcome new user</h1>
+    <p>Your name : {{ user.name }}</p>
+    <p>Your firstname : {{ user.firstname }}</p>
+    <p>Your email : {{ user.email }}</p>
+    <p>Your picture : <img src="{{ asset('uploads/pictures/' ~ user.picture) }}"></p>
+</div>
+{% endblock %}
